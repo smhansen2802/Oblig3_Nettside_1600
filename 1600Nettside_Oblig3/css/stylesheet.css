@@ -223,6 +223,103 @@ footer li {
 
 /*Product______________________________________________*/
 
+.productMain {
+    max-width: 55em;
+    margin: 2em auto;
+    padding: 1.5em;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hovedoverskrift stil */
+.productMain h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Underoverskrift stil */
+.productMain h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* Paragrafstil */
+.productMain p {
+    font-size: 1.125em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    color: #444;
+}
+
+/* Liste stil */
+.productMain ul {
+    padding-left: 1.5em;
+    margin-bottom: 1.5em;
+    list-style-type: disc;
+}
+
+.productMain li {
+    font-size: 1.125em;
+    margin-bottom: 0.75em;
+    color: #555;
+}
+
+/* Figur stil */
+.productMain figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.productMain img {
+    width: 100%;
+    max-width: 35em;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.productMain figcaption {
+    font-size: 1em;
+    color: #777;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+/* Sideinformasjon (aside) stil */
+.productMain aside {
+    font-size: 1em;
+    font-style: italic;
+    color: #555;
+    padding: 1em;
+    background-color: #fff7ed;
+    border-left: 0.25em solid #e8ba7a;
+    margin-top: 2em;
+    line-height: 1.6;
+}
+
+/* Flexbox for figurer i aside */
+.productMain aside figure {
+    display: inline-flex;               /* Bruk inline-flex for å få bildene side om side */
+    flex-direction: row;                /* Rad-rettning for horisontal layout */
+    margin: 1em;                        /* Avstand rundt hver figur */
+    max-width: 45%;                     /* Bildebredde for å tilpasse ved siden av hverandre */
+}
+
+.productMain aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+}
+
 /*Us___________________________________________________*/
 
 .aboutUsMain {
