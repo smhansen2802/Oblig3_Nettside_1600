@@ -46,8 +46,73 @@ header h2 {
     text-align: center;            /* Center text */
 }
 
+/*Frontpage knapper*/
+
+.containerMain {
+    justify-content: space-around;
+    padding: 1.25em;                  /* 20px equivalent */
+}
+
+.boxMain {
+    text-decoration: none;            /* Remove the underline from links */
+    display: block;                   /* Make the whole box clickable */
+    width: 18.75em;                   /* Set width of each box (300px equivalent) */
+    height: 6.25em;                   /* Set height of each box (100px equivalent) */
+    background-color: #e8ba7a;        /* Background color */
+    color: white;                     /* White text color */
+    border-radius: 1.875em;           /* Rounded corners (30px equivalent) */
+    text-align: center;               /* Center text in the box */
+    padding: 1.25em;                  /* Padding inside the box (20px equivalent) */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin: 0.625em;                  /* 10px equivalent */
+}
+
+.boxMain h2 {
+    font-size: 1.5em;                 /* 24px equivalent */
+    align-items: center;
+    color: black;
+}
+
+.frontMain {
+    display: flex;                     /* Enable Flexbox on the main section */
+    align-items: center;               /* Center content vertically */
+    justify-content: center;
+    min-height: 80vh;                  /* Ensure the main section takes up space on the page */
+    padding: 1.25em;                   /* Add padding around the content (20px equivalent) */
+    width: 100%;                       /* Set width to 100% */
+    height: 100vh;                     /* Set height to 100vh */
+    
+}
+
 
 /*Footer_______________________________________________*/
+
+footer {
+    display: flex;                       /* Enable Flexbox for the footer */
+    justify-content: center;             /* Center articles horizontally */
+    align-items: flex-start;             /* Align items to the top of the footer */
+    flex-wrap: wrap;                     /* Allow wrapping on smaller screens */
+    padding: 1.25em;                     /* Add padding around the footer (20px equivalent) */
+    background-color: #e7e7e7;           /* Background color for footer */
+    color: rgb(0, 0, 0);           /* Text color for footer */
+}
+
+/* Article styling */
+footer article {
+    margin: 0 1.25em;                    /* Add space between articles (20px equivalent) */
+    text-align: left;                    /* Align text to the left in each article */
+}
+
+/* List styling */
+footer ul {
+    list-style-type: none;               /* Remove default list styling */
+    padding: 0;                          /* Remove default padding */
+    margin: 0;                           /* Remove default margin */
+}
+
+footer li {
+    margin-bottom: 0.625em;              /* Add space between list items (10px equivalent) */
+}
 
 /*Header for alle andre sider__________________________*/
 
