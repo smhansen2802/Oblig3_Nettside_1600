@@ -1,18 +1,389 @@
 /*Basics______________________________________________*/
-html{
-    margin: 0em;
+html, body{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: inherit;
+
 }
 
 
 /*FrontPage___________________________________________*/
 
+/*Frontpage header*/
+.frontHeader {
+    display: flex;                 /* Enable flexbox for the header */
+    flex-direction: column;        /* Stack elements vertically (column layout) */
+    justify-content: center;       /* Center content vertically (for extra padding, etc.) */
+    align-items: center;           /* Center content horizontally */
+    padding: 0.625em;              /* Add padding around the header (10px equivalent) */
+    background-color: #000000;     /* Optional: Add a light background color */
+}
+
+/* Style for the image in the header */
+header figure {
+    margin: 0;                     /* Remove default figure margin */
+}
+
+header img {
+    width: 12.5em;                 /* Set image width to about 200px equivalent */
+    margin-bottom: 0.375em;        /* Add space between the image and the headings (6px equivalent) */
+}
+
+/* Heading styles */
+header h1 {
+    font-size: 3.125em;            /* Size of the main heading (50px equivalent) */
+    margin-bottom: 0.3125em;       /* Add a little space below the h1 (5px equivalent) */
+    text-align: center;            /* Center text */
+    color: #ff7300;
+}
+
+header h2 {
+    font-size: 2.0625em;           /* Size of the subheading (33px equivalent) */
+    color: #ff7300;                /* Optional: A slightly darker color for the subheading */
+    text-align: center;            /* Center text */
+}
+
+/*Frontpage knapper*/
+
+.containerMain {
+    justify-content: space-around;
+    padding: 1em;                  /* 20px equivalent */
+}
+
+.boxMain {
+    text-decoration: none;            /* Remove the underline from links */
+    display: block;                   /* Make the whole box clickable */
+    width: 18.75em;                   /* Set width of each box (300px equivalent) */
+    height: 6.25em;                   /* Set height of each box (100px equivalent) */
+    background-color: #e8ba7a;        /* Background color */
+    color: white;                     /* White text color */
+    border-radius: 1.875em;           /* Rounded corners (30px equivalent) */
+    text-align: center;               /* Center text in the box */
+    padding: 1.25em;                  /* Padding inside the box (20px equivalent) */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin: 0.9em;                  /* 10px equivalent */
+
+}
+
+.boxMain h2 {
+    font-size: 1.5em;                 /* 24px equivalent */
+    align-items: center;
+    color: black;
+}
+
+.frontMain {
+    display: flex;                     /* Enable Flexbox on the main section */
+    align-items: center;               /* Center content vertically */
+    justify-content: center;
+    min-height: 80vh;                  /* Ensure the main section takes up space on the page */
+    padding: 1.25em;                   /* Add padding around the content (20px equivalent) */
+    width: 100%;                       /* Set width to 100% */
+    height: 100vh;                     /* Set height to 100vh */
+    
+}
+
+
 /*Footer_______________________________________________*/
+
+footer {
+    display: flex;                       /* Enable Flexbox for the footer */
+    justify-content: center;             /* Center articles horizontally */
+    align-items: flex-start;             /* Align items to the top of the footer */
+    flex-wrap: wrap;                     /* Allow wrapping on smaller screens */
+    padding: 1.25em;                     /* Add padding around the footer (20px equivalent) */
+    background-color: #e7e7e7;           /* Background color for footer */
+    color: rgb(0, 0, 0);           /* Text color for footer */
+}
+
+/* Article styling */
+footer article {
+    margin: 0 1.25em;                    /* Add space between articles (20px equivalent) */
+    text-align: left;                    /* Align text to the left in each article */
+}
+
+/* List styling */
+footer ul {
+    list-style-type: none;               /* Remove default list styling */
+    padding: 0;                          /* Remove default padding */
+    margin: 0;                           /* Remove default margin */
+}
+
+footer li {
+    margin-bottom: 0.625em;              /* Add space between list items (10px equivalent) */
+}
 
 /*Header for alle andre sider__________________________*/
 
+.headerResten {
+    display: flex;                       /* Bruk Flexbox for horisontal layout */
+    align-items: center;                 /* Vertikalt sentrer innhold */
+    justify-content: space-between;      /* Fordel plass mellom logo og navigasjon */
+    padding: 0.625em 1.25em;             /* Padding på topp/bunn (10px) og sider (20px) */
+    background-color: #000000;              /* Bakgrunnsfarge for headeren */
+    color: #fff;                         /* Hvit tekstfarge */
+}
+
+/* Stil for logoen */
+.headerResten img {
+    width: 4em;                          /* Bredde på logoen (48px) */
+    height: auto;                        /* Behold proporsjoner */
+}
+
+/* Stil for hovedoverskrift */
+.headerResten h1 {
+    font-size: 1.5em;                    /* Fontstørrelse for hovedoverskrift (24px) */
+    color: #ff7300;                      /* Oransje farge på tekst */
+    margin: 0 1em;                       /* Litt mellomrom til venstre og høyre */
+}
+
+/* Navigasjonsmenyen */
+.headerResten nav ul {
+    display: flex;                       /* Horisontal layout for navigasjonslenker */
+    list-style-type: none;               /* Fjern punktmerking */
+    padding: 0;                          /* Fjern padding */
+    margin: 0;                           /* Fjern margin */
+}
+
+.headerResten nav ul li {
+    margin: 0 0.625em;                   /* Litt mellomrom mellom lenkene (10px) */
+}
+
+.headerResten nav ul li a {
+    color: #fff;                         /* Hvit tekstfarge for lenker */
+    text-decoration: none;               /* Fjern understreking */
+    font-size: 1em;                      /* Fontstørrelse for lenker (16px) */
+    transition: color 0.3s ease;         /* Smooth overgang for hover-effekt */
+}
+
+.headerResten nav ul li a:hover {
+    color: #ff7300;                      /* Oransje tekstfarge ved hover */
+}
+
 /*Values_______________________________________________*/
+
+.valuesMain {
+    max-width: 60em;                    /* Begrens bredden for bedre lesbarhet */
+    margin: 2em auto;                   /* Sentrer hovedinnholdet med margin */
+    padding: 1.25em;                    /* Indre padding for hele innholdet */
+    font-family: "Georgia", serif;      /* Klassisk serif-font for avislook */
+    line-height: 1.6;                   /* Luftig linjeavstand for lesbarhet */
+    color: #333;                      /* Dempet tekstfarge */
+    padding-left: 23em;
+    padding-right: 23em;
+}
+
+/* Stil for figuren */
+.valuesMain figure {
+    text-align: center;                 /* Sentrer bildet */
+    margin: 0 0 1.5em 0;                /* Bunnmargin for luft rundt bildet */
+}
+
+.valuesMain img {
+    width: 100%;                        /* Gjør bildet responsivt */
+    max-width: 40em;                    /* Maksbredde for stort bilde */
+    height: auto;                       /* Behold proporsjoner */
+    border-radius: 0.5em;               /* Svake avrundede hjørner for et mykt utseende */
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);  /* Lett skygge for dybde */
+}
+
+/* Artikkelstil */
+.valuesMain article {
+    margin-bottom: 2em;                 /* Mellomrom under artikkel */
+}
+
+.valuesMain h2 {
+    font-size: 2em;                     /* Størrelse på overskrifter (32px ved 16px basis) */
+    color: #333;                        /* Tekstfarge for overskrifter */
+    margin-top: 1em;                    /* Litt rom før overskrifter */
+    margin-bottom: 0.5em;               /* Margin under for luft */
+    font-weight: bold;                  /* Tydelig overskrift */
+    text-align: left;                   /* Venstrejustert for klassisk look */
+}
+
+.valuesMain p {
+    font-size: 1.125em;                 /* Paragrafstørrelse for enkel lesing (18px) */
+    margin-bottom: 1.5em;               /* Avstand mellom avsnitt */
+    text-align: justify;                /* Juster tekst for profesjonelt utseende */
+}
+
+/* Stil for sideinformasjon (aside) */
+.valuesMain aside {
+    font-size: 1em;                     /* Størrelse som passer med hovedtekst */
+    font-style: italic;                 /* Kursiv for å skille det ut */
+    color: #272727;                        /* Dempet tekstfarge for sideinformasjon */
+    padding: 1em;                       /* Indre padding for luft rundt teksten */
+    background-color: #fff7ed;          /* Lys bakgrunnsfarge */
+    border-left: 0.25em solid #e8ba7a;     /* Venstre kant for ekstra visuelt element */
+    margin-top: 2em;                    /* Øvre margin for avstand */
+    line-height: 1.6;                   /* Luftig linjeavstand */
+}
 
 /*Product______________________________________________*/
 
+.productMain {
+    max-width: 55em;
+    margin: 2em auto;
+    padding: 1.5em;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hovedoverskrift stil */
+.productMain h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Underoverskrift stil */
+.productMain h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* Paragrafstil */
+.productMain p {
+    font-size: 1.125em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    color: #444;
+}
+
+/* Liste stil */
+.productMain ul {
+    padding-left: 1.5em;
+    margin-bottom: 1.5em;
+    list-style-type: disc;
+}
+
+.productMain li {
+    font-size: 1.125em;
+    margin-bottom: 0.75em;
+    color: #555;
+}
+
+/* Figur stil */
+.productMain figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.productMain img {
+    width: 100%;
+    max-width: 35em;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.productMain figcaption {
+    font-size: 1em;
+    color: #777;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+/* Sideinformasjon (aside) stil */
+.productMain aside {
+    font-size: 1em;
+    font-style: italic;
+    color: #555;
+    padding: 1em;
+    background-color: #fff7ed;
+    border-left: 0.25em solid #e8ba7a;
+    margin-top: 2em;
+    line-height: 1.6;
+}
+
+/* Flexbox for figurer i aside */
+.productMain aside figure {
+    display: inline-flex;               /* Bruk inline-flex for å få bildene side om side */
+    flex-direction: row;                /* Rad-rettning for horisontal layout */
+    margin: 1em;                        /* Avstand rundt hver figur */
+    max-width: 45%;                     /* Bildebredde for å tilpasse ved siden av hverandre */
+}
+
+.productMain aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
+}
+
 /*Us___________________________________________________*/
+
+.aboutUsMain {
+    max-width: 55em;                    /* Begrens bredden for bedre lesbarhet */
+    margin: 2em auto;                   /* Sentrer hovedinnholdet og gi top og bunnmargin */
+    padding: 1.25em;                    /* Indre padding for hele innholdet */
+    font-family: "Georgia", serif;      /* Klassisk serif-font for en avisfølelse */
+    line-height: 1.6;                   /* Luftig linjeavstand for lesbarhet */
+    color: #333;                        /* Mørk grå tekstfarge */
+    padding-left: 23em;
+    padding-right: 23em;
+    
+}
+
+/* Stil for figuren */
+.aboutUsMain figure {
+    text-align: center;                 /* Sentrer bildet */
+    margin: 0 0 1.5em 0;                /* Bunnmargin for luft rundt bildet */
+}
+
+.aboutUsMain img {
+    width: 100%;                        /* Gjør bildet responsivt */
+    max-width: 35em;                    /* Maksbredde for å holde bildet passende */
+    height: auto;                       /* Behold proporsjoner */
+    border-radius: 0.5em;               /* Svake avrundede hjørner */
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2); /* Lett skygge for dybde */
+}
+
+/* Artikkelstil */
+.aboutUsMain article {
+    margin-bottom: 2em;                 /* Mellomrom under artikkel for visuell klarhet */
+}
+
+.aboutUsMain h2 {
+    font-size: 2em;                     /* Stor overskrift for artikkel (32px) */
+    color: #333;                        /* Mørk grå for eleganse */
+    margin-top: 1em;                    /* Øvre margin for luft rundt */
+    margin-bottom: 0.5em;               /* Luft under overskrift */
+    font-weight: bold;                  /* Tydeliggjør overskriften */
+    text-align: left;                   /* Venstrejustert for et klassisk utseende */
+}
+
+.aboutUsMain p {
+    font-size: 1.125em;                 /* Fontstørrelse på paragraf (18px) */
+    margin-bottom: 1.5em;               /* Avstand mellom avsnitt */
+    text-align: justify;                /* Juster tekst for et ryddig utseende */
+    color: #444;                        /* Litt lysere tekst for behagelig lesning */
+}
+
+/* Stil for viktige ord i teksten */
+.aboutUsMain p strong {
+    color: #000;                        /* Fremhev viktig tekst med mørkere farge */
+    font-weight: bold;                  /* Tykkere fontvekt for viktig informasjon */
+}
+
+/* Stil for lenker inne i teksten */
+.aboutUsMain a {
+    color: #0066cc;                     /* Blå farge for lenker */
+    text-decoration: none;              /* Fjern understreking */
+    font-weight: bold;
+    transition: color 0.3s ease;        /* Smooth overgang ved hover */
+}
+
+.aboutUsMain a:hover {
+    color: #ff7300;                     /* Oransje hover-effekt for lenker */
+}
 
