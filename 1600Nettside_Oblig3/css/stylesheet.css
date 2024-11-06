@@ -50,7 +50,7 @@ header h2 {
 
 .containerMain {
     justify-content: space-around;
-    padding: 1.25em;                  /* 20px equivalent */
+    padding: 1em;                  /* 20px equivalent */
 }
 
 .boxMain {
@@ -64,7 +64,8 @@ header h2 {
     text-align: center;               /* Center text in the box */
     padding: 1.25em;                  /* Padding inside the box (20px equivalent) */
     transition: background-color 0.3s ease; /* Smooth transition on hover */
-    margin: 0.625em;                  /* 10px equivalent */
+    margin: 0.9em;                  /* 10px equivalent */
+
 }
 
 .boxMain h2 {
