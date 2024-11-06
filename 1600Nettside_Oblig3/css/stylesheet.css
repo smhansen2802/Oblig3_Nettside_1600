@@ -1,13 +1,50 @@
 /*Basics______________________________________________*/
-html{
-    margin: 0em;
+html, body{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: inherit;
+
 }
 
 
 /*FrontPage___________________________________________*/
 
 /*Frontpage header*/
+.frontHeader {
+    display: flex;                 /* Enable flexbox for the header */
+    flex-direction: column;        /* Stack elements vertically (column layout) */
+    justify-content: center;       /* Center content vertically (for extra padding, etc.) */
+    align-items: center;           /* Center content horizontally */
+    padding: 0.625em;              /* Add padding around the header (10px equivalent) */
+    background-color: #000000;     /* Optional: Add a light background color */
+}
 
+/* Style for the image in the header */
+header figure {
+    margin: 0;                     /* Remove default figure margin */
+}
+
+header img {
+    width: 12.5em;                 /* Set image width to about 200px equivalent */
+    margin-bottom: 0.375em;        /* Add space between the image and the headings (6px equivalent) */
+}
+
+/* Heading styles */
+header h1 {
+    font-size: 3.125em;            /* Size of the main heading (50px equivalent) */
+    margin-bottom: 0.3125em;       /* Add a little space below the h1 (5px equivalent) */
+    text-align: center;            /* Center text */
+    color: #ff7300;
+}
+
+header h2 {
+    font-size: 2.0625em;           /* Size of the subheading (33px equivalent) */
+    color: #ff7300;                /* Optional: A slightly darker color for the subheading */
+    text-align: center;            /* Center text */
+}
 
 
 /*Footer_______________________________________________*/
