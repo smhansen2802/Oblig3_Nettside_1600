@@ -117,6 +117,51 @@ footer li {
 
 /*Header for alle andre sider__________________________*/
 
+.headerResten {
+    display: flex;                       /* Bruk Flexbox for horisontal layout */
+    align-items: center;                 /* Vertikalt sentrer innhold */
+    justify-content: space-between;      /* Fordel plass mellom logo og navigasjon */
+    padding: 0.625em 1.25em;             /* Padding på topp/bunn (10px) og sider (20px) */
+    background-color: #000000;              /* Bakgrunnsfarge for headeren */
+    color: #fff;                         /* Hvit tekstfarge */
+}
+
+/* Stil for logoen */
+.headerResten img {
+    width: 4em;                          /* Bredde på logoen (48px) */
+    height: auto;                        /* Behold proporsjoner */
+}
+
+/* Stil for hovedoverskrift */
+.headerResten h1 {
+    font-size: 1.5em;                    /* Fontstørrelse for hovedoverskrift (24px) */
+    color: #ff7300;                      /* Oransje farge på tekst */
+    margin: 0 1em;                       /* Litt mellomrom til venstre og høyre */
+}
+
+/* Navigasjonsmenyen */
+.headerResten nav ul {
+    display: flex;                       /* Horisontal layout for navigasjonslenker */
+    list-style-type: none;               /* Fjern punktmerking */
+    padding: 0;                          /* Fjern padding */
+    margin: 0;                           /* Fjern margin */
+}
+
+.headerResten nav ul li {
+    margin: 0 0.625em;                   /* Litt mellomrom mellom lenkene (10px) */
+}
+
+.headerResten nav ul li a {
+    color: #fff;                         /* Hvit tekstfarge for lenker */
+    text-decoration: none;               /* Fjern understreking */
+    font-size: 1em;                      /* Fontstørrelse for lenker (16px) */
+    transition: color 0.3s ease;         /* Smooth overgang for hover-effekt */
+}
+
+.headerResten nav ul li a:hover {
+    color: #ff7300;                      /* Oransje tekstfarge ved hover */
+}
+
 /*Values_______________________________________________*/
 
 /*Product______________________________________________*/
