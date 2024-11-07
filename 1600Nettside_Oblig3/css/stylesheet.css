@@ -136,7 +136,7 @@ footer li {
 .headerResten h1 {
     font-size: 1.5em;                    /* Fontstørrelse for hovedoverskrift (24px) */
     color: #ff7300;                      /* Oransje farge på tekst */
-    margin: 0 1em;                       /* Litt mellomrom til venstre og høyre */
+    margin: 1.5 1em;                       /* Litt mellomrom til venstre og høyre */
 }
 
 /* Navigasjonsmenyen */
